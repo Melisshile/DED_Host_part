@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/ico" href="./favicon_io/favicon-32x32.png" />
+    <title>DED App</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    
+</head>
+<body>
+    <div id="mainHolder">
+        <div id="sectionHolder">
+          <section id="firstSection">
+            <div><h1>Entry of Data</h1></div>
+            <div>
+              <form id="formData" class="formD">
+                <label for="studentNumber">Student Number </label><br>
+                <input type="number" id="studentNumber" placeholder="Student Number"><br>
+                <label for="nameSurname">Name & Surname </label><br>
+                <input type="text" id="nameSurname" placeholder="Name & Surname"><br>
+                <label for="faculty">Faculty </label><br>
+                <input type="text" id="faculty" placeholder="Faculty"><br>
+                <label for="ethnicity">Select the Ethnicity :</label><br>
+                <select id="ethnicity" name="ethnicitySel">
+                  <option value="">--Please choose an option--</option>
+                  <option value="black">Black</option>
+                  <option value="white">White</option>
+                  <option value="colorte">Colorte</option>
+                  <option value="indian">Indian</option>
+                </select><br>
+                <label for="age">Age</label><br>
+                <input type="number" id="age" placeholder="18"><br>
+                <label for="commStud">Commuting student :</label><br>
+                <select id="commStud" name="commStudent">
+                  <option value="">--Please choose an option--</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select><br>
+                <label for="event">Event </label><br>
+                <input type="text" id="eventName" placeholder="Event"><br>
+                <button type="submit">Save</button>
+              </form>
+            </div>
+          </section>
+          <section id="secondSection">
+            <div><h1>Search </h1></div>
+            <div>
+              <form id="search" class="searchData">
+                <label for="searchStudentNumber">Student Number </label><br>
+                <input type="number" id="searchStudentNumber" placeholder="Student Number"><br>
+                <button type="submit">Search</button>
+              </form>
+            </div>
+            <div id="searchResults" style="margin-top: 20px;"></div> <!-- Search results will be displayed here -->
+          </section>
+        </div>
+      </div>
+  
+    <script type="module" src='form.js'></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/ico" href="./favicon_io/favicon-32x32.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>DED App</title>
+  </head>
+  <body>
+    <div>
+      <section id="mySect">
+        <div id="loginCard" class="card">
+          <h1>Welcome to DED platform...</h1>
+          <form id="loginForm">
+            <label for="user">User</label><br>
+            <input type="email" id="email" placeholder="email@gmail.com"><br>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" placeholder="********"><br>
+            <button type="submit" title="Click to Login">Login</button>
+            <p id="error-message" style="color: red; display: none;">Invalid email or password. Please try again.</p>
+          </form>
+        </div>
+        <div id="imageHolder" class="card1">
+          <img src="background.jpg" alt="camp picture">
+        </div>
+      </section>
+      
+      <section>
+        <div id="visitHolder" class="card2">
+          <p>Visit us</p>
+          <div id="links">
+            <div id="facebook">
+              <a href="https://www.facebook.com/Doedsosha">
+                <i id="bf" class="fa-brands fa-facebook"></i>
+              </a>
+            </div>
+            <div id="tiktok">
+              <a href="https://www.tiktok.com/search?q=DED%20sosh&t=1725657144852">
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </div>
+    
+    <script src="main.js"></script>
+  </body>
+</html>
