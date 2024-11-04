@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link rel="stylesheet" href="ambassadorForm.css">
+    <link rel="icon" type="image/ico" href="./favicon_io/favicon-32x32.png" />
+    <title>DED App</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <div id="mainHolder">
+        <div id="sectionHolder">
+            <section id="firstSection">
+                <div><h1>Entry of Data</h1></div>
+                <div>
+                    <form id="formData" class="formD" >
+                        <label for="studentNumber">Student Number </label><br>
+                        <input type="number" id="studentNumber" name="studentNumber" placeholder="Student Number" required><br>
+                        <label for="nameSurname">Name & Surname </label><br>
+                        <input type="text" id="nameSurname" name="nameSurname" placeholder="Name & Surname" required><br>
+                        <label for="faculty">Faculty </label><br>
+                        <input type="text" id="faculty" name="faculty" placeholder="Faculty" required><br>
+                        <label for="ethnicity">Select the Ethnicity :</label><br>
+                        <select id="ethnicity" name="ethnicity" required>
+                            <option value="">--Please choose an option--</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="colorte">Colorte</option>
+                            <option value="indian">Indian</option>
+                        </select><br>
+                        <label for="age">Age</label><br>
+                        <input type="number" id="age" name="age" placeholder="18" required><br>
+                        <label for="res">Name Of Res :</label>
+                        <input type="text" id="res"><br>
+                        <label for="commStud">Commuting student :</label><br>
+                        <select id="commStud" name="commStud" required>
+                            <option value="">--Please choose an option--</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select><br>
+                        <label for="eventName">Event Attended </label><br>
+                        <input type="text" id="eventName" name="eventName" placeholder="Event" required><br>
+                        
+                        <!-- Rating Feature -->
+                        <label for="rating">Rate the Event (1 to 5)</label><br>
+                        <input type="number" id="rating" name="rating" min="1" max="5" placeholder="Rating" required><br>
+                        
+                        <button type="submit">Save</button>
+                    </form>
+                </div>
+            </section>
+            <section id="secondSection">
+                <div><h1>Search </h1></div>
+                <div>
+                    <form id="search" class="searchData">
+                        <label for="searchStudentNumber">Student Number </label><br>
+                        <input type="number" id="searchStudentNumber" name="searchStudentNumber" placeholder="Student Number" required><br>
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+                <div id="searchResults" style="margin-top: 20px;"></div>
+            </section>
+        </div>
+    </div>
+
+    <script type="module" src='ambassadorForm.js'></script>
+</body>
+</html>

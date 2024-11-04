@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/ico" href="./favicon_io/favicon-32x32.png" />
+    <title>Login and Sign Up Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="amabassadorLogin.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Login Form -->
+        <div class="form-container" id="loginForm">
+            <h2>Login</h2>
+            <form id="login">
+                <label for="loginUsername">Username</label>
+                <input type="text" id="loginUsername" required>
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" required>
+                <button type="submit" class="btn">Login</button>
+                <p>Don't have an account? <a href="#" id="signUpBtn">Sign up</a></p>
+            </form>
+        </div>
+
+        <!-- Sign Up Form (Initially Hidden) -->
+        <div class="form-container hidden" id="signUpForm">
+            <h2>Sign Up</h2>
+            <form id="signup">
+                <label for="studentNumber">Student Number</label>
+                <input type="text" id="studentNumber" required>
+
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" required>
+
+                <label for="surname">Surname</label>
+                <input type="text" id="surname" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+
+                <label for="preferredUsername">Preferred Username</label>
+                <input type="text" id="preferredUsername" required>
+
+                <label for="signUpPassword">Password</label>
+                <input type="password" id="signUpPassword" required>
+
+                <label for="gender">Gender</label>
+                <select id="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="age">Age</label>
+                <input type="number" id="age" min="18" required>
+
+                <label for="faculty">Faculty</label>
+                <input type="text" id="faculty" required>
+
+                <label for="residence">Name of Residence</label>
+                <input type="text" id="residence" required>
+
+                <label for="studyLevel">Level of Study</label>
+                <input type="text" id="studyLevel" required>
+
+                <button type="submit" class="btn">Sign Up</button>
+                <p>Already have an account? <a href="#" id="loginBtn">Login</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="amabassadorLogin.js"></script>
+</body>
+</html>
